@@ -1,15 +1,30 @@
 "use strict";
 
+let startCalculationButton = document.getElementById("start"),
+  budgetValue = document.getElementsByClassName("budget-value")[0],
+  daybudgetValue = document.getElementsByClassName("daybudget-value")[0],
+  levelValue = document.getElementsByClassName("level-value")[0],
+  expensesValue = document.getElementsByClassName("expenses-value")[0],
+  optionalexpensesValue = document.getElementsByClassName(
+    "optionalexpenses-value"
+  )[0],
+  incomeValue = document.getElementsByClassName("income-value")[0],
+  monthsavingsValue = document.getElementsByClassName("monthsavings-value")[0],
+  yearsavingsValue = document.getElementsByClassName("yearsavings-value")[0],
+  inputField = document.getElementsByClassName("expenses-item"),
+  approveBtn = document.getElementsByTagName("button")[0],
+  optionalApproveBtn = document.getElementsByTagName("button")[1],
+  calculateBtn = document.getElementsByTagName("button")[2],
+  optionalExpensesInput = document.querySelectorAll(".optionalexpenses-item"),
+  incomeInput = document.querySelector(".choose-income"),
+  checkBoxSavings = document.querySelector("#savings"),
+  sumValue = document.querySelector(".choose-sum"),
+  percentValue = document.querySelector(".choose-percent"),
+  yearValue = document.querySelector(".year-value"),
+  monthValue = document.querySelector(".month-value"),
+  dayValue = document.querySelector(".day-value");
+
 let money, date;
-
-function start() {
-  while (isNaN(money) || money == "" || money == null) {
-    money = +prompt("Ваш бюджет на месяц?");
-  }
-  date = prompt("Введите дату в формате YYYY-MM-DD");
-}
-
-start();
 
 const appData = {
   budget: money,
@@ -18,6 +33,12 @@ const appData = {
   optionalExpenses: {},
   income: [],
   savings: true,
+  getBudjet: function() {
+    while (isNaN(money) || money == "" || money == null) {
+      money = +prompt("Ваш бюджет на месяц?");
+    }
+    date = prompt("Введите дату в формате YYYY-MM-DD");
+  },
   chooseExpences: function() {
     for (let i = 0; i < 2; i++) {
       let expensesName = prompt(
@@ -51,7 +72,7 @@ const appData = {
         expensesName.length < 50
       ) {
         console.log("done");
-        // debugger;
+
         appData.optionalExpenses[i] = expensesName;
       } else i--;
     }
