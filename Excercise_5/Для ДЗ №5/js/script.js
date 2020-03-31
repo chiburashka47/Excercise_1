@@ -16,7 +16,7 @@ body.style.background = "url(../img/apple_true.jpg)";
 
 title.textContent = "Мы продаем только подлинную технику Apple";
 
-columnContainer[1].removeChild(advertising);
+advertising.remove();
 
 setTimeout(() => {
   let opinionText = prompt("Ваше отношение к технике Apple?", "");
