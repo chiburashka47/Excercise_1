@@ -1,0 +1,42 @@
+{
+  "name": "Excercise_17",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "core-util-is": "^1.0.2",
+    "cyclist": "^1.0.1",
+    "decode-uri-component": "^0.2.0",
+    "domain-browser": "^1.2.0",
+    "emojis-list": "^3.0.0",
+    "esrecurse": "^4.2.1",
+    "estraverse": "^4.3.0",
+    "events": "^3.1.0",
+    "fast-deep-equal": "^3.1.1",
+    "fast-json-stable-stringify": "^2.1.0",
+    "figgy-pudding": "^3.5.2",
+    "file-uri-to-path": "^1.0.0",
+    "for-in": "^1.0.2",
+    "fs.realpath": "^1.0.0",
+    "get-value": "^2.0.6",
+    "graceful-fs": "^4.2.3",
+    "https-browserify": "^1.0.0",
+    "ieee754": "^1.1.13",
+    "iferr": "^0.1.5",
+    "imurmurhash": "^0.1.4",
+    "infer-owner": "^1.0.4",
+    "inherits": "^2.0.4",
+    "is-binary-path": "^1.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
